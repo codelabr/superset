@@ -30,14 +30,14 @@ from celery.schedules import crontab
 from flask_caching.backends.filesystemcache import FileSystemCache
 
 # Define constants
-KEYCLOAK_BASE_URL = "https://sso.smarthospital247.com/auth/realms/superset"
+KEYCLOAK_BASE_URL = "https://sso.mykeycloak.com/auth/realms/superset"
 SUPERSET_BASE_URL = "http://14.248.85.117:8088"
 
 # Client ID and secret can be obtained in Keycloak
 KEYCLOAK_CLIENT_ID = "superset-client"
-KEYCLOAK_CLIENT_SECRET = "AvSgZ1BYxux1fgMlAS1NjRqXm92KbmNy"
+KEYCLOAK_CLIENT_SECRET = "..."
 
-os.environ['REQUESTS_CA_BUNDLE'] = '/etc/ssl/certs/smarthospital247_com.pem'
+os.environ['REQUESTS_CA_BUNDLE'] = '/etc/ssl/certs/mydomain_com.pem'
 
 logger = logging.getLogger()
 
